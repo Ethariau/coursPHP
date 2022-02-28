@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ /*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    max-width: 100%;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+}
+h2{
+    margin: 1rem 0 1rem 2rem;
+}
+section{
+    border-radius: 10px;
+}
+/*PARTIE COURS*/
+.partieCours{
+    background-color: khaki;
+    width: 1700px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    text-align: center;
+}
+.flexCours{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    height: 100%;
+}
+.flexCours article{
+    height: 100%;
+    background-color: gold;
+    box-shadow: 0 0 6px goldenrod inset;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+.partieCours button{
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 6px goldenrod;
+    margin: 1rem 1rem;
+    cursor: pointer;
+}
+.partieCours button:hover{
+background-color: gold;
+font-weight: 600;
+
+}
+/*MODAL IMG COURS*/
+.boxShadow{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 217, 0, 0.5);
+    z-index: 2;
+    display: none;
+}
+.boxShadowDisplay{
+    display: block;
+}
+.bigImg{
+    max-width: 90%;
+    max-height: 90%;
+    position: fixed;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+/*EXERCICE*/
+.exercice{
+    width: 1800px;
+    margin: auto;
+}
+.exercice h3{
+    margin: 1rem 0;
+}
+.gridExercice{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.reponse{
+    margin: 1rem 0;
+    color: dodgerblue;
+    display: none;
+}
+.reponseDisplay{
+    display: block;
+}
+.repButton{
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    background: none;
+    border-radius: 50px;
+    border: 2px solid gold;
+    color: gold;
+}
+.repButton:hover{
+    background-color: gold;
+    color: black;
+}
+.repButtonDisplay{
+    display: none;
+}
